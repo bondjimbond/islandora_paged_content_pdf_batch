@@ -140,12 +140,12 @@ function drush_islandora_paged_content_pdf_batch_preprocess_validate() {
   if ($language = drush_get_option('language', 'eng')) {
     module_load_include('inc', 'islandora_paged_content_pdf_batch', 'includes/utilities');
     $valid_languages = islandora_paged_content_pdf_batch_available_languages();
-    if (!in_array($language, $valid_languages)) {
-      return drush_set_error('Invalid language entered', dt('The specified language, !language, is not valid. Languages available are: @lang.', array(
-        '!language' => $language,
-        '@lang' => implode(', ', $valid_languages),
-      )));
-    }
+//    if (!in_array($language, $valid_languages)) {
+//      return drush_set_error('Invalid language entered', dt('The specified language, !language, is not valid. Languages available are: @lang.', array(
+//        '!language' => $language,
+//        '@lang' => implode(', ', $valid_languages),
+//      )));
+//    }
   }
 
   if ($format = drush_get_option('format', 'tiff32nc')) {

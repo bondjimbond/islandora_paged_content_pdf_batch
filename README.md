@@ -31,7 +31,7 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 
 The base ZIP preprocessor can be called as a drush script (see `drush help islandora_paged_content_pdf_batch_preprocess` for additional parameters):
 
-`drush -v -u 1 --uri=http://localhost islandora_paged_content_pdf_batch_preprocess --target=/path/to/archive.zip --content-model=islandora:bookCModel --parent=islandora:bookCollection`
+`drush -v -u 1 --uri=http://localhost islandora_paged_content_pdf_batch_preprocess --target=/path/to/archive.zip --content_model=islandora:bookCModel --parent=islandora:bookCollection`
 
 This will populate the queue (stored in the Drupal database) with base entries.
 
